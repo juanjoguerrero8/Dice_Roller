@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/diceImageView"
+        android:layout_width="265dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="416dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_f3b2" />
+
+    <Button
+        android:id="@+id/rollButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        app:iconTint="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diceImageView" />
+
+    <TextView
+        android:id="@+id/randomNumberTextView"
+        android:layout_width="49dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="234dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollButtonView"
+        tools:text="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
